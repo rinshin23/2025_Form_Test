@@ -22,18 +22,10 @@ namespace Form_Test
                 for (int j = 0; j < 6; j++)
                 //　インスタンスの生成
                 {
-                    test_button test_Button = new test_button();
+                    test_button test_Button = new test_button(new Point(50 * j, 50 * i), new Size(50, 50), "あ");
 
-
-                    //ボタンの位置を設定
-                    test_Button.Location = new Point(50 * j, 50 * i);
-
-                    //ボタンの大きさを設定
-                    test_Button.Size = new Size(50, 50);
-
-                    //ボタン内のテキストを設定
-                    test_Button.Text = "あいうえお";
-                    //コントロールにボタンを追加
+                    
+                    //コントロールにボタンを 追加
                     Controls.Add(test_Button);
                 }
             }
