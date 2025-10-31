@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_Form_Test\\Form_Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A32B219C-5C2E-4F66-A0AC-AC943FD891B8}|Form_Test.csproj|c:\\users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_form_test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A32B219C-5C2E-4F66-A0AC-AC943FD891B8}|Form_Test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A32B219C-5C2E-4F66-A0AC-AC943FD891B8}|Form_Test.csproj|C:\\Users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_Form_Test\\Form_Test\\test-button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A32B219C-5C2E-4F66-A0AC-AC943FD891B8}|Form_Test.csproj|solutionrelative:test-button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A32B219C-5C2E-4F66-A0AC-AC943FD891B8}|Form_Test.csproj|c:\\users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_form_test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A32B219C-5C2E-4F66-A0AC-AC943FD891B8}|Form_Test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A32B219C-5C2E-4F66-A0AC-AC943FD891B8}|Form_Test.csproj|C:\\Users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_Form_Test\\Form_Test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -22,30 +22,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_Form_Test\\Form_Test\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_Form_Test\\Form_Test\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwBoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T04:55:08.919Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "test-button.cs",
               "DocumentMoniker": "C:\\Users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_Form_Test\\Form_Test\\test-button.cs",
               "RelativeDocumentMoniker": "test-button.cs",
-              "ToolTip": "C:\\Users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_Form_Test\\Form_Test\\test-button.cs",
-              "RelativeToolTip": "test-button.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\boltk\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\2025_Form_Test\\Form_Test\\test-button.cs*",
+              "RelativeToolTip": "test-button.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T05:05:54.248Z",
               "EditorCaption": ""
