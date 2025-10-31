@@ -44,8 +44,6 @@ namespace Form_Test
         private void  Click1Event (object sender, EventArgs e) 
         {
 
-
-            MessageBox.Show("ハト");
             SetEnable(!_enable);
         }
     }

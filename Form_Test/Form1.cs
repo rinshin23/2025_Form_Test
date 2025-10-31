@@ -17,11 +17,11 @@ namespace Form_Test
         const int BOARD_SIZE_X = 3;
         const int BOARD_SIZE_Y = 3;
 
-
+        private test_button[,] _buttonArray;
         public Form1()
         {
             InitializeComponent();
-
+            _buttonArray = new test_button[BOARD_SIZE_Y, BOARD_SIZE_X];
 
             for (int i = 0; i < BOARD_SIZE_X; i++)
             {
@@ -29,9 +29,12 @@ namespace Form_Test
                 //　インスタンスの生成
                 {
                     test_button test_Button = new test_button(new Point(BUTTUN_SIZE_X * j, BUTTUN_SIZE_Y * i),
-                                              new Size(BUTTUN_SIZE_X, BUTTUN_SIZE_Y), "あ");
+                                              new Size(BUTTUN_SIZE_X, BUTTUN_SIZE_Y), "");
+                    _buttonArray[j,i] = test_Button;
 
-                    
+
+
+
                     //コントロールにボタンを 追加
                     Controls.Add(test_Button);
                 }
