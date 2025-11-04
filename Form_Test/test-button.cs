@@ -11,7 +11,7 @@ namespace Form_Test
     public class test_button : Button
     {
     private Color _onColor = Color.Red;
-    private Color _offColor = Color.White;
+    private Color _offColor = Color.Blue;
         private bool _enable;
         private Form1 _form1;
         private int _x;
@@ -55,8 +55,14 @@ namespace Form_Test
         
         private void  Click1Event (object sender, EventArgs e) 
         {
-            _form1.GetTestButton(_x,_y).SetEnable(true);
-            
+            _form1.GetTestButton(_x,_y)?.Toggle();
+            _form1.GetTestButton(_x+1, _y)?.Toggle();
+            _form1.GetTestButton(_x-1, _y)?.Toggle();
+            _form1.GetTestButton(_x, _y+1)?.Toggle();
+            _form1.GetTestButton(_x, _y-1)?.Toggle();
+
+
+
         }
     }
     
