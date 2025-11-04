@@ -31,7 +31,7 @@ namespace Form_Test
                     test_button test_Button = new test_button(this, i, j,
                         new Point(BUTTUN_SIZE_X * j, BUTTUN_SIZE_Y * i),
                         new Size(BUTTUN_SIZE_X, BUTTUN_SIZE_Y), "");
-                    _buttonArray[j, i] = test_Button;
+                    _buttonArray[i, j] = test_Button;
 
 
 
@@ -44,8 +44,8 @@ namespace Form_Test
         }
         public test_button GetTestButton(int x, int y)
         {
-
-
+            if (x < 0 || x >= BOARD_SIZE_X)return null;
+            if (y < 0 || y >= BOARD_SIZE_Y)return null;
             return _buttonArray[x,y];
         }
 

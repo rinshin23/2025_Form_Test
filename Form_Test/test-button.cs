@@ -10,7 +10,7 @@ namespace Form_Test
 {
     public class test_button : Button
     {
-    private Color _onColor = Color.Purple;
+    private Color _onColor = Color.Red;
     private Color _offColor = Color.White;
         private bool _enable;
         private Form1 _form1;
@@ -29,7 +29,10 @@ namespace Form_Test
                 BackColor = _offColor;
             }
         }
-         
+         public void Toggle()
+        {
+            SetEnable(!_enable);
+        }
 
 
 
@@ -45,7 +48,7 @@ namespace Form_Test
             Size = size;
             Text = text;
 
-            SetEnable(true);
+            SetEnable(false);
 
             Click += Click1Event;
         }
