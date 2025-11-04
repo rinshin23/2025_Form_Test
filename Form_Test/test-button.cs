@@ -8,11 +8,12 @@ using System.Windows.Forms;
 
 namespace Form_Test
 {
-    internal class test_button : Button
+    public class test_button : Button
     {
     private Color _onColor = Color.Purple;
     private Color _offColor = Color.White;
         private bool _enable;
+        private Form1 _form1;
 
         public void SetEnable(bool on)
         {
@@ -30,8 +31,10 @@ namespace Form_Test
 
 
 
-        public test_button(Point position, Size size, string text)
+        public test_button(Form1 form1,  Point position, Size size, string text)
         {
+            _form1 = form1;
+
             Location = position;
             Size = size;
             Text = text;
@@ -43,8 +46,8 @@ namespace Form_Test
         
         private void  Click1Event (object sender, EventArgs e) 
         {
-
-            SetEnable(!_enable);
+            _form1.GetTestButton(1, 1).SetEnable(true);
+            
         }
     }
     
