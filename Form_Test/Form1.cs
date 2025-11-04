@@ -28,9 +28,10 @@ namespace Form_Test
                 for (int j = 0; j < BOARD_SIZE_Y; j++)
                 //　インスタンスの生成
                 {
-                    test_button test_Button = new test_button(this, new Point(BUTTUN_SIZE_X * j, BUTTUN_SIZE_Y * i),
-                                              new Size(BUTTUN_SIZE_X, BUTTUN_SIZE_Y), "");
-                    _buttonArray[j,i] = test_Button;
+                    test_button test_Button = new test_button(this, i, j,
+                        new Point(BUTTUN_SIZE_X * j, BUTTUN_SIZE_Y * i),
+                        new Size(BUTTUN_SIZE_X, BUTTUN_SIZE_Y), "");
+                    _buttonArray[j, i] = test_Button;
 
 
 
@@ -38,15 +39,13 @@ namespace Form_Test
                     //コントロールにボタンを 追加
                     Controls.Add(test_Button);
                 }
-
-                GetTestButton(1,0).SetEnable(true);
-
-            } 
-            
-
+            }
+        
         }
         public test_button GetTestButton(int x, int y)
         {
+
+
             return _buttonArray[x,y];
         }
 
