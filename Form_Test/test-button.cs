@@ -16,6 +16,10 @@ namespace Form_Test
         private Form1 _form1;
         private int _x;
         private int _y;
+        public bool IsEnabled()
+        {
+            return _enable;
+        }
 
         public void SetEnable(bool on)
         {
@@ -62,7 +66,7 @@ namespace Form_Test
             _form1.GetTestButton(_x, _y-1)?.Toggle();
 
 
-
+            _form1.CheckClear();
         }
     }
     

@@ -40,8 +40,34 @@ namespace Form_Test
                     Controls.Add(test_Button);
                 }
             }
-        
+            Random();
+
         }
+        private void Random()
+        {
+            Random rand = new Random();
+
+            for (int x = 0; x < BOARD_SIZE_X; x++)
+            {
+                for (int y = 0; y < BOARD_SIZE_Y; y++)
+                {
+                    _buttonArray[x, y].SetEnable(rand.Next(2) == 0);
+                }
+            }
+        }
+        public void CheckClear()
+        {
+            for (int x = 0; x < 3; x++)
+            {
+                for (int y = 0; y < 3; y++)
+                {
+                    if (!_buttonArray[x, y].IsEnabled()) return;
+                }
+            }
+
+            MessageBox.Show("クリア！");
+        }
+
         public test_button GetTestButton(int x, int y)
         {
             if (x < 0 || x >= BOARD_SIZE_X)return null;
