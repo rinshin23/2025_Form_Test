@@ -66,6 +66,7 @@ namespace Form_Test
             }
 
             MessageBox.Show("クリア！");
+            Random();
         }
 
         public test_button GetTestButton(int x, int y)
