@@ -57,11 +57,14 @@ namespace Form_Test
         }
         public void CheckClear()
         {
-            for (int x = 0; x < 3; x++)
+            bool firstState = _buttonArray[0, 0].IsEnabled();
+
+            for (int x = 0; x < BOARD_SIZE_X; x++)
             {
-                for (int y = 0; y < 3; y++)
+                for (int y = 0; y < BOARD_SIZE_Y; y++)
                 {
-                    if (!_buttonArray[x, y].IsEnabled()) return;
+                    if (_buttonArray[x, y].IsEnabled() != firstState)
+                        return;
                 }
             }
 
